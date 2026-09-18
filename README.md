@@ -142,6 +142,34 @@ Example input:
 See `nllb_200_1_3B_8bit.ipynb` for the complete tokenization and
 generation workflow.
 
+Sample Test Results:
+```text
+Myanmar: ဆရာ တိုင်း ကျောင်းသားတိုင်းက ဆရာ ရက်ဂျီဟုသာ ခေါ် နေကြလေသည်။
+Actual translation: Every teacher and every student simply called him Teacher Reggie.
+Base Translation: Teacher and student are just calling us Teacher Raji.
+Fined tuned Translation: Teacher and student are just calling us Teacher Raji.
+
+Myanmar: သူ အနီရောင်မကြိုက်ဘူးဆိုတာ ကျွန်တော် ဘာကြောင့် မသိခဲ့ရတာလဲ။
+Actual translation: Why didn't I know that he doesn't like the color red?
+Base Translation: How did I know he didn't like red?
+Fined tuned Translation: How did I know he didn't like red?
+
+Myanmar: ရွာကို သတင်းစာ မရောက်သဖြင့် ရေဒီယို သတင်းတွေ နားထောင်သည်။
+Actual translation: Since newspapers didn't reach the village, they listened to radio news.
+Base Translation: The village does not receive newspapers and listen to radio news.
+Fined tuned Translation: The village does not receive newspapers and listen to radio news.
+
+Myanmar: တကယ်ဆို ထမင်းဘူးတစ်ခုလုံး သူ့ကြောင့် မှောက်ကျတဲ့ ဥစ္စာပဲ။
+Actual translation: Actually, the entire lunch box fell over because of him.
+Base Translation: In fact, the whole lunch box is a freaking piece of shit because of him.
+Fined tuned Translation: In fact, the whole lunch box is a freaking piece of shit because of him.
+
+Myanmar: ဖဲင်နီသည် ထိုသို့ပြောလိုက်ရသဖြင့် ကျေနပ်သွားကာရယ်လိုက်သည်။
+Actual translation: Fanny was satisfied with what she had said and laughed.
+Base Translation: Fenny, upon hearing these words, was satisfied and laughed.
+Fined tuned Translation: Fennie, upon hearing these words, was satisfied and laughed.
+```
+
 ## MIG Burmese LLM Experiment
 
 `mig_burmese_llm.ipynb` explores `Ko-Yin-Maung/mig-burmese-llm` for the
