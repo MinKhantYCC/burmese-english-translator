@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu132"
+verify_ssl = true
+name = "pytorch-cuda"
+
+[packages]
+torch = "*"
+torchvision = "*"
+transformers = "*"
+datasets = "*"
+evaluate = "*"
+sacrebleu = "*"
+peft = "*"
+accelerate = "*"
+trl = "*"
+bitsandbytes = "*"
+huggingface-hub = "*"
+safetensors = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.12"

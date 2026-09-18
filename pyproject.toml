@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization"
+]
